@@ -1,14 +1,13 @@
+// import axios from "axios";
 import React, { useState } from "react";
 import {
-  View,
+  Keyboard,
+  StyleSheet,
   Text,
   TextInput,
   TouchableOpacity,
-  StyleSheet,
-  Keyboard,
+  View,
 } from "react-native";
-import axios from "axios";
-import Constants from "expo-constants";
 import { KeyboardAwareFlatList } from "react-native-keyboard-aware-scroll-view";
 
 export default function PsychiatristScreen() {
@@ -17,10 +16,6 @@ export default function PsychiatristScreen() {
   ]);
   const [input, setInput] = useState("");
   const [loading, setLoading] = useState(false);
-
-  const GEMINI_KEY = Constants.expoConfig.extra.geminiApiKey;
-  const MODEL_NAME = "gemini-2.5-flash"; 
-  const URL = `https://generativelanguage.googleapis.com/v1beta/models/${MODEL_NAME}:generateContent?key=${GEMINI_KEY}`;
 
   const sendMessage = async () => {
     if (!input.trim()) return;
@@ -31,31 +26,25 @@ export default function PsychiatristScreen() {
     setLoading(true);
 
     try {
-      const response = await axios.post(URL, {
-        contents: [
-          {
-            role: "user",
-            parts: [
-              {
-                text: `You are a professional psychiatrist. Respond with empathy, warmth, and understanding. 
-                Patient says: ${input}`,
-              },
-            ],
-          },
-        ],
+      const response = await fetch('/api/ai-psychiatrist', {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({ message: input }),
       });
-
+      if (!response.ok) {
+        throw new Error(`API error: ${response.status}`);
+      }
+      
+      const data = await response.json();
       const aiMessage = {
         role: "assistant",
-        text: response.data.candidates[0].content.parts[0].text,
+        text: data.reply,
       };
       setMessages((prev) => [...prev, aiMessage]);
     } catch (error) {
-      if (axios.isAxiosError(error)) {
-        console.error("Gemini API error:", error.response?.data || error.message);
-      } else {
-        console.error("Gemini API error:", String(error));
-      }
+      console.error("API error:", error);
       setMessages((prev) => [
         ...prev,
         { role: "assistant", text: "⚠️ Sorry, I couldn’t process that." },
