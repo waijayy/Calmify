@@ -1,5 +1,5 @@
 
-# Clamify
+# Calmify
 
 _A mental health support app for students, built with Expo and React Native._
 
@@ -40,13 +40,14 @@ Many students don’t seek help because counseling resources are limited or they
 
 ## 📚 Documentation
 
-### Features
-- Mood diary and journaling
-- AI-powered chat and mood analysis
-- Calendar integration for reminders
-- Voice journal and sentiment analysis
-- Virtual pet for engagement
-- Step tracking and activity reminders
+### Proposed Features
+- Daily mood check-in & mood tracking
+- Voice journal to reflect your mood
+- AI-psychiatrist as mental health assistant
+- Calendar integration for analyzing academic stress
+- Virtual pet that reflects your mood
+- Therapy & stress management tools
+- Anonymous forum as safe space to share feelings
 
 ### Folder Structure
 - `app/` - Main app code
