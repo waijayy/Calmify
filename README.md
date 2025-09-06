@@ -1,50 +1,61 @@
-# Welcome to your Expo app 👋
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+# Clamify
 
-## Get started
+_A mental health support app for students, built with Expo and React Native._
 
-1. Install dependencies
+---
 
-   ```bash
-   npm install
-   ```
+## 🚩 Track & Problem Statement
 
-2. Start the app
+**Selected Track:** Student Lifestyle
 
-   ```bash
-   npx expo start
-   ```
+**Problem Statement:**
+Many students don’t seek help because counseling resources are limited or they fear stigma. This challenge will explore creating tools for self care, mental health support and helping students cope with the demands of university life.
 
-In the output, you'll find options to open the app in a
+---
 
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
+## 🖌️ Prototype
 
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
+[View Figma Design](https://www.figma.com/design/9nd7bfsIp6VkfCOYjVLNzK/Clamify?node-id=0-1&t=MzSPr8CY2Dvk9XYr-1)
 
-## Get a fresh project
+---
 
-When you're ready, run:
+## 📦 Tech Stack
 
-```bash
-npm run reset-project
-```
+- **Frontend:** React Native, Expo, Expo Router, TypeScript
+- **Backend:** Serverless API routes (Node.js/TypeScript)
+- **AI/NLP:** Google Gemini API
+- **Navigation:** React Navigation
+- **UI:** Expo Vector Icons, Expo Components
 
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
+---
 
-## Learn more
+## 🚀 Getting Started
 
-To learn more about developing your project with Expo, look at the following resources:
+1. Clone the repo
+2. Install dependencies: `npm install`
+3. Start the app: `npx expo start`
 
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
+---
 
-## Join the community
+## 📚 Documentation
 
-Join our community of developers creating universal apps.
+### Features
+- Mood diary and journaling
+- AI-powered chat and mood analysis
+- Calendar integration for reminders
+- Voice journal and sentiment analysis
+- Virtual pet for engagement
+- Step tracking and activity reminders
 
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+### Folder Structure
+- `app/` - Main app code
+- `app/api/` - Serverless API routes
+- `app/function/` - UI pages/screens
+- `app/(tabs)/` - Tabbed navigation pages
+- `docs/` - Documentation
+
+### Environment Variables
+- See `.env.example` for required environment variables (API keys, base URLs, etc.)
+
+---
