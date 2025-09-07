@@ -1,20 +1,51 @@
 import { StyleSheet } from "react-native";
 
 export const styles = StyleSheet.create({
-  container: { flex: 1, padding: 20, backgroundColor: "white" },
-  header: { fontSize: 24, fontWeight: "bold", marginBottom: 20 },
-  grid: {
-    flexDirection: "row",
-    flexWrap: "wrap",
+  background: {
+    flex: 1,
+  },
+  overlay: {
+    flex: 1,
+    paddingHorizontal: 30,
+    paddingTop: 50,
+  },
+  header: {
+    fontSize: 28,
+    fontWeight: "bold",
+    color: "#FFFFFF",
+    marginBottom: 16,
+    textAlign: "center",
+    fontFamily: "serif",
+  },
+  searchBar: {
+    backgroundColor: "rgba(255, 255, 255, 1)",
+    borderRadius: 12,
+    paddingHorizontal: 14,
+    paddingVertical: 10,
+    fontSize: 16,
+    marginBottom: 20,
+  },
+  cardContainer: {
     justifyContent: "space-between",
   },
+
   card: {
-    width: "45%",
+    flex: 1,
+    margin: 10,
     height: 200,
-    borderRadius: 15,
+    borderRadius: 16,
     justifyContent: "center",
     alignItems: "center",
-    marginBottom: 15,
   },
-  cardText: { color: "white", fontSize: 16, fontWeight: "bold" },
+  cardText: {
+    fontSize: 18,
+    fontWeight: "bold",
+    color: "#fff",
+  },
+  noMatch: {
+    fontSize: 18,
+    color: "#FFFFFF",
+    textAlign: "center",
+    marginTop: 40,
+  },
 });
