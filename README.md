@@ -16,7 +16,7 @@ Many students don’t seek help because counseling resources are limited or they
 
 ## 🖌️ Prototype
 
-[View Figma Design](https://www.figma.com/design/9nd7bfsIp6VkfCOYjVLNzK/Clamify?node-id=0-1&t=MzSPr8CY2Dvk9XYr-1)
+[View Figma Design](https://www.figma.com/design/9nd7bfsIp6VkfCOYjVLNzK/Clamify?node-id=0-1&t=MzSPr8CY2Dvk9XYr-1)  
 [View Canva Slides](https://www.canva.com/design/DAGyLRiVGzk/wSW2QjKTLuCOlYx-UObg1w/edit?utm_content=DAGyLRiVGzk&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton)
 
 ---
