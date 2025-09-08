@@ -28,6 +28,7 @@ Many students don’t seek help because counseling resources are limited or they
 - **AI/NLP:** Google Gemini API
 - **Navigation:** React Navigation
 - **UI:** Expo Vector Icons, Expo Components
+- **Data Management** PostgreSQL
 
 ---
 
